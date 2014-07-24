@@ -6,3 +6,6 @@ all: $(PROGS)
 
 %: %.chpl
 	chpl  -o $@ $<
+
+clean:
+	rm $(PROGS)
