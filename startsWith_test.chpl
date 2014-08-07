@@ -1,0 +1,16 @@
+writeln("https://foo.com".startsWith("https://"));
+writeln("http://foo.com".startsWith("http://"));
+writeln("ftp://foo.com".startsWith("ftp://"));
+writeln("hdfs://sealcs01:54310//tmp/test.txt".startsWith("hdfs://"));
+writeln("https://".startsWith("https://", "ftp://", "smtp://", "http://"));
+writeln("http://".startsWith("https://", "ftp://", "smtp://", "http://"));
+writeln("ftp://".startsWith("https://", "ftp://", "smtp://", "http://"));
+writeln("hdfs://sealcs01:54310//tmp/test.txt".startsWith("hdfs://"));
+writeln("These should all be false");
+writeln("hdfs://sealcs01:54310//tmp/test.txt".startsWith("ftp://"));
+writeln("hhdfs://sealcs01:54310//tmp/test.txt".startsWith("hdfs://"));
+writeln("httpss://foo.com".startsWith("https://"));
+writeln("httph://foo.com".startsWith("http://"));
+writeln("ftpp://foo.com".startsWith("ftp://"));
+writeln("www.http://".startsWith("http://"));
+writeln("dhdjfftp://".startsWith("ftp://"));
